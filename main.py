@@ -16,3 +16,4 @@ showpic.show()
 #TODO: Variables for inputs, user prompts,
 #Test Change
 #Does my git work now?
+#Decoupling an old user account, want to get this solved for the future so its not a problem later
