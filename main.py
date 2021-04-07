@@ -11,3 +11,5 @@ Image.fromarray(i).convert('L').save('1.png')
 showpic = Image.open("1.png")
 showpic.show()
 
+
+#TODO: Make a GUI and input prompts so that a user can mess with this
