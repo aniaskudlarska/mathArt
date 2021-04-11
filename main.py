@@ -24,5 +24,4 @@ im = Image.open('1.png')
 im.show()
 
 
-#This is the vanilla code
-#We want to
+
