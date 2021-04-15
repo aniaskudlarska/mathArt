@@ -1,6 +1,10 @@
 import sys
-import matplotlib
+import matplotlib.pyplot
+import numpy
 
+
+fig = matplotlib.pyplot.figure()
+ax = matplotlib.pyplot.axes()
 #Rewriting my old Collatz code
 #Make a graph of this and make it pretty
 
@@ -15,10 +19,17 @@ def Collatz(num, counter=0):
             num = (3*num) +1
             counter += 1
 
-    return("Reached end in " + str(counter) + " steps")
-
-print(Collatz(22))
+    return(counter)
 
 #this keeps track of how many steps, so we can graph how many steps Y it takes to collatz a value X
+dataList = []
+for i in range(1,1000):
+    dataList.append(Collatz(i))
 
+xVal = numpy.linspace(0,1000, 999) # Creates x values 1,2,3.....999
+yVal = dataList
+
+
+matplotlib.pyplot.scatter(xVal,yVal)
+matplotlib.pyplot.show()
 
