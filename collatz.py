@@ -2,6 +2,10 @@ import sys
 import matplotlib.pyplot
 import numpy
 
+#TODO: GUI, graph future problems
+
+#Sequential math problems - create a unified graphing system!
+
 
 fig = matplotlib.pyplot.figure()
 ax = matplotlib.pyplot.axes()
